@@ -11,7 +11,7 @@
 
 
 ## Executive Summary 
-Our technology services firm expects to receive EUR 12,500,000 from a European client in 12 months. At today's spot rate of 1.1522, this receivable converts to approximately $14,402,500 in USD proceeds — but that figure is entirely dependent on where EURUSD trades at maturity. A 5% depreciation of the euro would reduce our USD proceeds by roughly $720,125, directly compressing margins on a contract already priced in euros. More immediately, the 1-year forward rate of 1.0910 implies the market already anticipates meaningful euro weakness, placing $765,000 of spot value at risk if we remain unhedged. This memo outlines the exposure, explains why it warrants active risk management, and introduces three hedging strategies — a forward contract, a currency put option, and a money market hedge — for the CFO's consideration. Subsequent stages will build a quantitative model, document the methodology, and deliver a final hedge recommendation.
+OOur technology services firm expects to receive EUR 12,500,000 from a European client in 12 months. At today's spot rate of 1.1522, this receivable converts to approximately $14,402,500 in USD proceeds — but that figure depends entirely on EURUSD at maturity. A 5% depreciation of the euro would reduce USD proceeds by roughly $720,125, directly compressing margins. The 1-year forward rate of 1.0910 signals market expectations of euro weakness, placing $765,000 of spot value at risk if left unhedged. This memo outlines the exposure, explains the risk, and introduces three hedging strategies — a forward contract, a currency put option, and a money market hedge — for the CFO's consideration. Subsequent stages will build a quantitative model, document methodology, and deliver a final hedge recommendation.
 
 ---
 
@@ -20,11 +20,11 @@ Our technology services firm expects to receive EUR 12,500,000 from a European c
 Our firm has contracted to deliver technology services to a European client, with payment of EUR 12,500,000 due in 12 months. Because our cost base and financial reporting are USD-denominated, any weakening of the euro between now and the payment date directly erodes our realized revenue. The current EURUSD spot rate of 1.1522 values this receivable at $14,402,500 — but the 1-year forward rate of 1.0910 signals that currency markets already expect the euro to weaken significantly. Recent EURUSD volatility — driven by diverging Fed and ECB monetary policy, shifting U.S. trade policy, and eurozone growth uncertainty — makes this exposure material and time-sensitive.
 
 **Primary objective:** Protect the USD value of the EUR 12.5M receivable against adverse euro depreciation.
-**Secondary objective:** Preserve upside participation if the euro strengthens, where cost-effective.
+
 
 ---
 
-## Method (models & assumptions)
+## Method 
 
 Three hedging strategies will be evaluated in Stages 2–4:
 
@@ -46,33 +46,12 @@ Each strategy will be modeled across a range of EURUSD outcomes (0.95–1.20) to
 
 ---
 
-## Findings (figures/tables referenced)
+## Next Steps
 
-Quantitative findings are pending the Stage 2 Excel model. The model will calculate net USD proceeds for each strategy across the full EURUSD scenario range and identify the breakeven exchange rates at which the option and money market hedge outperform the unhedged position. A summary comparison table will be included in Stage 2.
-
----
-
-## Implications (policy/managerial)
-
-Three directional observations apply ahead of the full model:
-
-1. **The forward contract** locks in $13,637,500 with zero premium — best if the CFO prioritizes certainty and has no expectation of EUR appreciation.
-2. **The put option** costs $212,500 upfront but keeps the door open if EUR strengthens above spot (1.1522) — best if the firm wants downside protection without fully surrendering upside.
-3. **The money market hedge** leverages the +1.72% interest rate differential (SOFR minus €STR) to replicate forward pricing using the balance sheet — best if the firm prefers to avoid derivatives and has available credit capacity.
-
-The Stage 4 recommendation will select the optimal strategy based on modeled outcomes and the firm's risk tolerance.
-
----
-
-## Limitations & Next Steps
-
-**Limitations:** The put option strike rate (k) is pending final confirmation from the course scenario sheet. SOFR and €STR are as of April 3, 2026, and subject to change. Transaction costs, counterparty credit risk, and basis risk are not yet modeled. Option premiums and the forward rate are treated as fixed per the scenario parameters.
-
-**Next Steps:**
 
 1. **Stage 2 – Excel Model Build:** Construct a working spreadsheet that computes and compares net USD proceeds for all three strategies across a full range of EURUSD outcomes at maturity.
 2. **Stage 3 – Technical Specification:** Document the model's architecture, assumptions, and formulas — precise enough for an AI or analyst to reconstruct independently.
-3. **Stage 4 – Final Analysis & Recommendation:** Select the optimal hedge strategy using model results, draft a structured AI prompt for sensitivity analysis, and present the final recommendation to the CFO.
+3. **Stage 4 – Final Analysis & Recommendation:** Select the optimal hedge strategy using model results, draft a structured AI prompt for sensitivity analysis, and present the final recommendation.
 
 ---
 
